@@ -1,0 +1,39 @@
+@use 'vars';
+
+.wrapperContainer-dark{
+    background-color: vars.$backgroundColorDark ;
+    color: vars.$colorTextLight;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: vars.$primaryColor;
+        padding: 2rem 0;
+
+        &__nav{
+            
+            &__list{
+                display: flex;
+                gap: 1rem;
+                list-style: none;
+
+                a{
+                    color: inherit;
+                    text-decoration: none;
+                    border: solid 1px vars.$primaryColor;
+                    border-radius: 1rem;
+                    letter-spacing: 2px;
+                    padding: .75em 1.15rem;
+
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+                
+            }
+
+        }
+    }
+    
+}

@@ -1,0 +1,6 @@
+@use 'vars';
+
+.wrapperContainer-dark2{
+    background-color: vars.$backgroundColorDark2;
+    color: vars.$colorTextLight ;
+}

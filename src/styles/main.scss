@@ -1,0 +1,84 @@
+@use 'header';
+@use 'hero';
+@use 'cursos';
+@use 'nossaEscola';
+@use 'contatos';
+@use 'footer';
+@use 'vars';
+
+// .inter-<uniquifier> {
+//     font-family: "Inter", serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Inter", serif;
+    font-size: 62.5%;
+}
+
+.container{
+    max-width: 1276px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin button(){
+    background-color: vars.$primaryColor;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 1.6rem 4.6rem;
+}
+
+@mixin title($fontSize: 4.0rem){
+    font-size: $fontSize;
+}
+
+@mixin text($fontSize: 1.6rem){
+    font-size: $fontSize;
+}
+
+.big-title{
+    @include title(4.8rem);
+
+    @media (max-width: 768px){
+        @include title(2.6rem)
+    }
+}
+
+.title{
+    @include title;
+
+    @media (max-width: 768px){
+        @include title(2.4rem)
+    }
+}
+
+.small-title{
+    @include title(2.8rem);
+
+    @media (max-width: 768px){
+        @include title(2.2rem)
+    }
+}
+
+
+.big-text{
+    @include text(1.8rem)
+}
+
+.text{
+    @include text;
+}
+
+.button{
+    @include button;
+}
+

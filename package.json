@@ -1,0 +1,25 @@
+{
+  "name": "projeto-pessoal---langingpage-aprenser---(serliv)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "prod": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.83.0"
+  },
+  "dependencies": {
+    "imagemin": "^9.0.0"
+  }
+}
