@@ -1,0 +1,8 @@
+@use 'vars';
+
+.footer{
+    text-align: center;
+    padding: 2rem;
+    color: vars.$primaryColor;
+    border-top: 3px solid vars.$primaryColor;
+}

@@ -1,8 +1,17 @@
 @use 'vars';
 
+
+.wrapperContainer-sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
 .wrapperContainer-dark{
     background-color: vars.$backgroundColorDark ;
     color: vars.$colorTextLight;
+    
 
     .header{
         display: flex;
@@ -10,7 +19,7 @@
         align-items: center;
         color: vars.$primaryColor;
         padding: 2rem 0;
-
+        
         &__nav{
             
             &__list{

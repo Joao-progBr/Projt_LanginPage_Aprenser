@@ -3,4 +3,18 @@
 .wrapperContainer-dark2{
     background-color: vars.$backgroundColorDark2;
     color: vars.$colorTextLight ;
+
+    .nossaEscola{
+        display: flex;
+        gap: 10rem;
+        padding-top: 8rem;
+        
+        &__about{
+           
+            &__title{
+                margin-top: 2rem;
+            }
+        }
+    }
+
 }

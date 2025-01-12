@@ -14,7 +14,7 @@
 
 <body>
 
-    <div class="wrapperContainer-dark"> 
+    <div class="wrapperContainer-dark wrapperContainer-sticky"> 
         <header class="header container">
             <img src="./dist/images/logoAprenser.png" alt="Logo APRENSER">
             <nav class="header__nav">
@@ -41,16 +41,16 @@
             <img src="./dist/images/HeroImage.png" alt="Mulher feliz segurando uma flor">
         </section>
     </div>
-    <div class="wrapperContainer-light">
-        <section id="cursos" class="cursos container">
-            <h2>
+    <div class="wrapperContainer-light wrapperContainer wrapperContainer-padded">
+        <section id="cursos" class="cursos container  ">
+            <h2 class="title">
                 Principais Cursos
             </h2>
             <div class="cursos__curso">
                 <article class="cursos__curso__card">
                     <img src="./dist/images/curso-design.png" alt="Curso Design para Web">
                     <div class="cursos__curso__card__item">
-                        <h3>Design para Web</h3>
+                        <h3 class="small-title">Design para Web</h3>
                         <p class="text">
                             O curso Design para Web é perfeito para aqueles que desejam 
                             aprender a criar designs atraentes e funcionais para sites e 
@@ -61,8 +61,8 @@
                 <article  class="cursos__curso__card">
                     <img src="./dist/images/curso-design-1.png" alt="Curso Front-End Developer">
                     <div class="cursos__curso__card__item">
-                        <h3>Front End Developer</h3>
-                        <p>
+                        <h3 class="small-title">Front End Developer</h3>
+                        <p class="text">
                             Aprenda HTML, CSS e Javascript e crei interfaces ricas e 
                             semânticas para páginas web, aplicativos on-line ou até mesmo 
                             aplicações para aparelhos celulares.
@@ -72,8 +72,8 @@
                 <article  class="cursos__curso__card">
                     <img src="./dist/images/curso-design-2.png" alt="Curso Back-End Developer">
                    <div class="cursos__curso__card__item">
-                        <h3>Back-End Developer</h3>
-                        <p>
+                        <h3 class="small-title">Back-End Developer</h3>
+                        <p class="text">
                             Com este curso você vai dominar uma linguagem back-end a sua 
                             escolha, um sistema de banco de dados e aprenderá como funciona o 
                             protocolo HTTP na prática.
@@ -81,41 +81,43 @@
                    </div>
                 </article>
             </div>
-            <a href="#" class="btn">
+            <a href="#" class="button big-text cursos__btn">
                 Ver mais cursos
             </a>
         </section>
     </div>
-    <div class="wrapperContainer-dark2">
-        <section id="nossa-escola" class="nossaEscola container">
+    <div id="nossa-escola" class="wrapperContainer-dark2 wrapperContainer wrapperContainer-padded">
+        <section  class="nossaEscola container">
             <img src="./dist/images/nossa-escola.png" alt="Mulher feliz com Nossa Escola">
-            <h2>Nossa Escola</h2>
-            <p>
-                Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de 
-                carreira com a nossa escola de tecnologia online. 
-                Oferecemos uma ampla gama de cursos online, desde programação e 
-                desenvolvimento de software até design gráfico e análise de dados. 
-                Nossos instrutores experientes fornecerão a você um ambiente de aprendizado 
-                interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias 
-                para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada 
-                para se tornar um profissional de tecnologia bem-sucedido.
-            </p>
+            <div class="nossaEscola__about">
+                <h2 class="title nossaEscola__about__title">Nossa Escola</h2>
+                <p class="text">
+                    Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de 
+                    carreira com a nossa escola de tecnologia online. 
+                    Oferecemos uma ampla gama de cursos online, desde programação e 
+                    desenvolvimento de software até design gráfico e análise de dados. 
+                    Nossos instrutores experientes fornecerão a você um ambiente de aprendizado 
+                    interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias 
+                    para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada 
+                    para se tornar um profissional de tecnologia bem-sucedido.
+                </p>
+            </div>
         </section>
     </div>
-    <div class="wrapperContainer-light">
-        <section id="contatos" class="contatos container">
-            <h2>Contatos</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.496765194915!2d-47.068108459468654!3d-22.784049679427685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c17bafc9d3cf%3A0x34e2c2b12ff1fb59!2sRua%20Bortolo%20Martins%2C%201225%20-%20Ch%C3%A1cara%20Santa%20Margarida%2C%20Campinas%20-%20SP%2C%2013085-450!5e0!3m2!1sen!2sbr!4v1736385189768!5m2!1sen!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <address>         
+    <div id="contatos" class="wrapperContainer-light wrapperContainer wrapperContainer-padded">
+        <section  class="contatos container">
+            <h2 class="title">Contatos</h2>
+            <iframe class="contatos__localization" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.496765194915!2d-47.068108459468654!3d-22.784049679427685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c17bafc9d3cf%3A0x34e2c2b12ff1fb59!2sRua%20Bortolo%20Martins%2C%201225%20-%20Ch%C3%A1cara%20Santa%20Margarida%2C%20Campinas%20-%20SP%2C%2013085-450!5e0!3m2!1sen!2sbr!4v1736385189768!5m2!1sen!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address class="contatos__address text">         
                 <i>Av. da Liberdade, 1001</i><br>
                 <a href="tel: +351 21 123 456">tel: +351 21 123 456</a><br>
-                <a href="mailTo: contato@aprenser.com">contato@aprenser.com</a><br>
+                <a href="mailTo: contato@aprenser.com">Email: contato@aprenser.com</a><br>
             </address>
         </section>
     </div>
-    <div class="wrapperContainer-dark">
-        <footer>
-            Coded by João
+    <div class="wrapperContainer-dark wrapperContainer">
+        <footer class="footer">
+            <h3 class="small-title"> Coded by João</h3>
         </footer>
     </div>
     

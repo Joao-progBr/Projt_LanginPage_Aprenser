@@ -1,0 +1,16 @@
+.contatos{
+    text-align: center;
+    padding-top: 10rem;
+    
+    &__address{
+        text-align: end;
+        font-family: 'Inter', serif;
+        padding-top: 3rem;
+        
+        a{
+            text-decoration: none;
+            color: #000 ;
+            cursor: pointer;
+        }
+    }
+}

@@ -32,10 +32,16 @@ html{
 
 @mixin button(){
     background-color: vars.$primaryColor;
+    color: #000;
     border-radius: 4px;
     text-decoration: none;
     padding: 1.6rem 4.6rem;
-}
+    cursor: pointer;
+        &:hover{
+            background-color: vars.$backgroundColorDark;
+            color: vars.$primaryColor;
+        }
+    }
 
 @mixin title($fontSize: 4.0rem){
     font-size: $fontSize;
@@ -55,6 +61,7 @@ html{
 
 .title{
     @include title;
+    padding-bottom: 5rem;
 
     @media (max-width: 768px){
         @include title(2.4rem)
@@ -62,10 +69,11 @@ html{
 }
 
 .small-title{
-    @include title(2.8rem);
+    @include title(2.4rem);
+    padding-bottom: 1rem;
 
     @media (max-width: 768px){
-        @include title(2.2rem)
+        @include title(2.0rem)
     }
 }
 
@@ -76,9 +84,17 @@ html{
 
 .text{
     @include text;
+    line-height: 1.5;
 }
 
 .button{
     @include button;
 }
 
+.wrapperContainer-light{
+    padding-bottom: 8rem;
+}
+
+.wrapperContainer-padded{
+    padding-top: 5rem;
+}

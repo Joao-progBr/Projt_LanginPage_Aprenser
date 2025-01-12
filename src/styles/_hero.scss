@@ -18,15 +18,6 @@
                     text-transform: uppercase;
                 }
             }
-
-            &__btn{
-                cursor: crosshair;
-                
-                &:hover{
-                    background-color: vars.$backgroundColorDark;
-                    color: vars.$primaryColor;
-                }
-            }
         }
     }
 }
