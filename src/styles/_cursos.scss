@@ -44,4 +44,30 @@
             }
         }
     }
+
+    @media (max-width:767px) {
+        .cursos{
+
+            &__curso{
+                display: block;
+
+                &__card{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width:1023px) {
+        .cursos{
+
+            &__curso{
+                display: block;
+
+                &__card{
+                    margin: 60px 0;
+                }
+            }
+        }
+    }
 }

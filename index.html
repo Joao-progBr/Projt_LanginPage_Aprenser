@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./dist/styles/main.css">
     <title>APRENSER</title>
 
@@ -16,29 +17,29 @@
 
     <div class="wrapperContainer-dark wrapperContainer-sticky"> 
         <header class="header container">
-            <img src="./dist/images/logoAprenser.png" alt="Logo APRENSER">
+            <img src="./dist/images/logoAprenser.png" alt="Logo APRENSER" data-aos="flip-left" data-aos-duration="1000">
             <nav class="header__nav">
                 <ul class="header__nav__list">
-                    <li class="header__nav__list__item">
-                        <a class="text" href="#cursos">Cursos</a>
+                    <li data-aos="flip-left" data-aos-duration="1000" class="header__nav__list__item">
+                        <a class="text" href="#cursos" >Cursos</a>
                     </li>
-                    <li class="header__nav__list__item">
-                        <a class="text" href="#nossa-escola">Nossa Escola</a>
+                    <li data-aos="flip-right" data-aos-duration="2000" class="header__nav__list__item">
+                        <a class="text" href="#nossa-escola" >Nossa Escola</a>
                     </li>
-                    <li class="header__nav__list__item">
-                        <a class="text" href="#contatos">Contatos</a>
+                    <li data-aos="flip-left" data-aos-duration="2500" class="header__nav__list__item">
+                        <a class="text" href="#contatos" >Contatos</a>
                     </li>
                 </ul>
             </nav>
         </header>
     </div>
     <div class="wrapperContainer-hero">
-        <section class="hero__Banner container">
+        <section class="hero__Banner container" data-aos="fade-up" data-aos-duration="1000">
             <div class="hero__Banner__more">
                 <h1 class="hero__Banner__more__text big-title">O saber é o que transforma nosso <span>ser</span></h1>
                 <a href="#" class="hero__Banner__more__btn button big-text">Saiba mais</a>
             </div>
-            <img src="./dist/images/HeroImage.png" alt="Mulher feliz segurando uma flor">
+            <img src="./dist/images/HeroImage.png" alt="Mulher feliz segurando uma flor"   >
         </section>
     </div>
     <div class="wrapperContainer-light wrapperContainer wrapperContainer-padded">
@@ -47,8 +48,8 @@
                 Principais Cursos
             </h2>
             <div class="cursos__curso">
-                <article class="cursos__curso__card">
-                    <img src="./dist/images/curso-design.png" alt="Curso Design para Web">
+                <article class="cursos__curso__card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./dist/images/curso-design.png" alt="Curso Design para Web" >
                     <div class="cursos__curso__card__item">
                         <h3 class="small-title">Design para Web</h3>
                         <p class="text">
@@ -58,7 +59,7 @@
                         </p>
                     </div>
                 </article>
-                <article  class="cursos__curso__card">
+                <article  class="cursos__curso__card" data-aos="fade-up" data-aos-duration="2000">
                     <img src="./dist/images/curso-design-1.png" alt="Curso Front-End Developer">
                     <div class="cursos__curso__card__item">
                         <h3 class="small-title">Front End Developer</h3>
@@ -69,7 +70,7 @@
                         </p>
                     </div>
                 </article>
-                <article  class="cursos__curso__card">
+                <article  class="cursos__curso__card" data-aos="fade-up" data-aos-duration="3000">
                     <img src="./dist/images/curso-design-2.png" alt="Curso Back-End Developer">
                    <div class="cursos__curso__card__item">
                         <h3 class="small-title">Back-End Developer</h3>
@@ -86,9 +87,9 @@
             </a>
         </section>
     </div>
-    <div id="nossa-escola" class="wrapperContainer-dark2 wrapperContainer wrapperContainer-padded">
-        <section  class="nossaEscola container">
-            <img src="./dist/images/nossa-escola.png" alt="Mulher feliz com Nossa Escola">
+    <div id="nossa-escola" class="wrapperContainer-dark2 wrapperContainer wrapperContainer-padded" >
+        <section  class="nossaEscola container" >
+            <img src="./dist/images/nossa-escola.png" alt="Mulher feliz com Nossa Escola" data-aos="fade-up" data-aos-duration="1000">
             <div class="nossaEscola__about">
                 <h2 class="title nossaEscola__about__title">Nossa Escola</h2>
                 <p class="text">
@@ -121,6 +122,7 @@
         </footer>
     </div>
     
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

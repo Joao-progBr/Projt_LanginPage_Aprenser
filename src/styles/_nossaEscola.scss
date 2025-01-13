@@ -17,4 +17,37 @@
         }
     }
 
+    @media (max-width:767px) {
+        .nossaEscola{
+            display: flex;
+            flex-direction: column;
+            padding-top: 4rem;
+
+            &__about{
+                order: 1;
+            }
+
+            img{
+                width: 100%;
+                order: 2;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width:1024px) {
+        .nossaEscola{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+                order: 2;
+            }
+
+            &__about{
+                order: 1;
+            }
+
+        }
+    }
+
 }

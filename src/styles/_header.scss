@@ -1,6 +1,7 @@
 @use 'vars';
 
 
+
 .wrapperContainer-sticky{
     position: sticky;
     top: 0;
@@ -42,6 +43,28 @@
                 
             }
 
+        }
+    }
+
+    @media (max-width:767px) {
+        
+        .header{
+
+            img{
+                height: 30px;
+            }
+
+            &__nav{
+
+                &__list{
+                    gap: .5rem;
+
+                    a{
+                        font-size: 1.2rem;
+                        padding: .5rem;
+                    }
+                }
+            }
         }
     }
     

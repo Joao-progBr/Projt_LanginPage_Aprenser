@@ -20,4 +20,44 @@
             }
         }
     }
+
+
+    @media (max-width:767px) {
+        
+        .hero__Banner{
+            display: block;
+            text-align: center;
+
+            &__more{
+                margin: 75px 0;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width:1024px) {
+        .hero__Banner{
+            display: block;
+            text-align: center;
+    
+            &__more{
+                margin: 160px 0;
+                
+                &__text{
+                    margin-bottom: 6rem;
+    
+                    span{
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
